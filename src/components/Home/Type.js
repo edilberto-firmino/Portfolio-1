@@ -5,13 +5,12 @@ function Type() {
   return (
     <Typewriter
       options={{
-        strings: [
-          "Especialistas em",
-          "Sistemas Web",
-          "Landing page",
-          "E-commerce",
-          "Serviços DevOps",
-        ],
+        strings:[ 
+        "Especialistas em", 
+        "Sistemas Web", 
+        "Web Landing page", 
+        "Serviços DevOps", 
+        "E-commerce",],
         autoStart: true,
         loop: true,
         deleteSpeed: 50,
