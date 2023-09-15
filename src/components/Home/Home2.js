@@ -6,6 +6,7 @@ import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
+  AiOutlineWhatsApp,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
@@ -57,7 +58,7 @@ function Home2() {
               Fique à vontade para <span className="purple">conectar-se</span> conosco
             </p>
             <ul className="home-about-social-links">
-              <li className="social-icons">
+              {/* <li className="social-icons">
                 <a
                   href="https://github.com/wige"
                   target="_blank"
@@ -66,8 +67,8 @@ function Home2() {
                 >
                   <AiFillGithub />
                 </a>
-              </li>
-              <li className="social-icons">
+              </li> */}
+              {/* <li className="social-icons">
                 <a
                   href="https://twitter.com/wige"
                   target="_blank"
@@ -76,17 +77,19 @@ function Home2() {
                 >
                   <AiOutlineTwitter />
                 </a>
-              </li>
+              </li> */}
+
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/company/wige/"
+                  href="https://api.whatsapp.com/send?phone=85997101058"
                   target="_blank"
-                  rel="noreferrer"
+                  rel="noopener noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <FaLinkedinIn />
+                  <AiOutlineWhatsApp />
                 </a>
               </li>
+
               <li className="social-icons">
                 <a
                   href="https://www.instagram.com/wige"
@@ -97,6 +100,18 @@ function Home2() {
                   <AiFillInstagram />
                 </a>
               </li>
+
+              <li className="social-icons">
+                <a
+                  href="https://www.linkedin.com/company/wige/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="icon-colour  home-social-icons"
+                >
+                  <FaLinkedinIn />
+                </a>
+              </li>
+              
             </ul>
           </Col>
         </Row>
