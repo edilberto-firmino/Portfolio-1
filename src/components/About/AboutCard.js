@@ -8,33 +8,29 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
-            <br /> I am a final year student pursuing an Integrated MSc (IMSc)
-            in Maths and Computing at BIT Mesra.
+            A Wige é muito mais do que uma empresa de desenvolvimento de sistemas web. Somos uma equipe dedicada e inovadora, comprometida em moldar o futuro da tecnologia web. <br></br> A Wige tem desempenhado um papel fundamental na transformação digital de empresas em todo o mundo.
             <br />
-            Additionally, I am currently employed as a software developer at
-            Juspay.
+            Nossa jornada é marcada por uma paixão implacável por criar soluções web excepcionais que impulsionam o crescimento, melhoram a eficiência e proporcionam experiências excepcionais aos usuários. Não somos apenas programadores, designers ou especialistas em tecnologia; somos solucionadores de problemas. Acreditamos que a tecnologia web é a força motriz por trás de todas as empresas modernas, e é por isso que trabalhamos incansavelmente para criar sistemas web de classe mundial que elevam nossos clientes a um patamar superior.
             <br />
             <br />
-            Apart from coding, some other activities that I love to do!
+            Na Wige, não apenas desenvolvemos sistemas web; criamos soluções que transformam empresas. Estamos comprometidos em ser o parceiro de confiança de nossos clientes em sua jornada digital, capacitando-os a alcançar e superar seus objetivos de negócios.
+            <br />
+            Junte-se a nós enquanto continuamos a moldar o futuro da tecnologia web, uma linha de código de cada vez. A Wige está pronta para enfrentar qualquer desafio e explorar todas as possibilidades que a tecnologia web tem a oferecer. Estamos prontos para ajudá-lo a fazer a diferença no mundo digital.
+            <br />
+           
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Desenvolvimento de Sistemas WEB
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <ImPointRight /> E-Commerce
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <ImPointRight /> DevOps
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>

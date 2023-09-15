@@ -16,6 +16,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { TbBuilding, TbBuildingArch, TbBuildingBridge, TbBuildingBroadcastTower, TbBuildingCastle, TbBuildingCommunity } from "react-icons/tb";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -77,7 +78,7 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineBook style={{ marginBottom: "2px" }} /> Orçamento
+                <TbBuildingCommunity style={{ marginBottom: "2px" }} /> Empresa
               </Nav.Link>
             </Nav.Item>
 
