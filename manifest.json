@@ -1,63 +1,64 @@
 {
-  "name": "portfolio",
-  "short_name": "CLIQUE AQUI PARA INSTALAR APP",
-  "description": "My portfolio website",
-  "version": "0.1.0",
+  "name": "Bem Vindo a WIGE",
+  "short_name": "WIGE App",
+  "description": "Bem Vindo a WIGE",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
   "theme_color": "#000000",
-  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "orientation": "any",
   "icons": [
     {
-      "src": "Assets/logo.png",
-      "sizes": "192x192",
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "https://pwabuilder.com/assets/icons/icon_192.png",
+      "sizes": "512x512",
       "type": "image/png"
     }
   ],
-  "private": true,
-  "dependencies": {
-    "@react-pdf/renderer": "^2.2.0",
-    "@testing-library/jest-dom": "^5.16.2",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.26.1",
-    "bootstrap": "^5.1.3",
-    "react": "^17.0.2",
-    "react-bootstrap": "^2.2.1",
-    "react-dom": "^17.0.2",
-    "react-github-calendar": "^3.2.2",
-    "react-icons": "^4.8.0",
-    "react-parallax-tilt": "^1.7.42",
-    "react-pdf": "^5.7.1",
-    "react-router-dom": "^6.2.2",
-    "react-scripts": "5.0.0",
-    "react-tsparticles": "^1.42.2",
-    "typewriter-effect": "^2.18.2",
-    "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "screenshots": [
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "PWABuilder Home Screen"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen2.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "PWABuilder Report Card"
+    },
+    {
+      "src": "https://www.pwabuilder.com/assets/screenshots/screen3.png",
+      "sizes": "2880x1800",
+      "type": "image/png",
+      "description": "Manifest information on the Report Card"
+    }
+  ],
+  "display_override": ["window-controls-overlay"],
+  "protocol_handlers": [
+    {
+      "protocol": "mailto",
+      "url": "/newEmail?to=%s"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Start Live Session",
+      "short_name": "Start Live",
+      "description": "Jump directly into starting or joining a live session",
+      "url": "/?startLive",
+      "icons": [
+        {
+          "src": "https://pwabuilder.com/assets/icons/icon_192.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
 }
