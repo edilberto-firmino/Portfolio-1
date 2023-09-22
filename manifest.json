@@ -1,24 +1,21 @@
 {
-  "name": "Bem Vindo a WIGE",
-  "short_name": "WIGE App",
-  "description": "Bem Vindo a WIGE",
-  "start_url": "/",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff",
-  "orientation": "any",
-  "icons": [
+  "display_override": ["window-controls-overlay"], 
+  "protocol_handlers": [{"protocol":"mailto","url":"/newEmail?to=%s"}], 
+  "description": "", 
+  "shortcuts": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
-    },
-    {
-      "src": "https://pwabuilder.com/assets/icons/icon_192.png",
-      "sizes": "512x512",
-      "type": "image/png"
+      "name": "Start Live Session",
+      "short_name": "Start Live",
+      "description": "Jump direction into starting or joining a live session",
+      "url": "/?startLive",
+      "icons": [
+        {
+          "src": "https://pwabuilder.com/assets/icons/icon_192.png",
+          "sizes": "192x192"
+        }
+      ]
     }
-  ],
+  ], 
   "screenshots": [
     {
       "src": "https://www.pwabuilder.com/assets/screenshots/screen1.png",
@@ -28,7 +25,7 @@
     },
     {
       "src": "https://www.pwabuilder.com/assets/screenshots/screen2.png",
-      "sizes": "2880x1800",
+      "sizes": "2880/1800",
       "type": "image/png",
       "description": "PWABuilder Report Card"
     },
@@ -38,27 +35,20 @@
       "type": "image/png",
       "description": "Manifest information on the Report Card"
     }
-  ],
-  "display_override": ["window-controls-overlay"],
-  "protocol_handlers": [
-    {
-      "protocol": "mailto",
-      "url": "/newEmail?to=%s"
-    }
-  ],
-  "shortcuts": [
-    {
-      "name": "Start Live Session",
-      "short_name": "Start Live",
-      "description": "Jump directly into starting or joining a live session",
-      "url": "/?startLive",
-      "icons": [
-        {
-          "src": "https://pwabuilder.com/assets/icons/icon_192.png",
-          "sizes": "512x512",
-          "type": "image/png"
-        }
-      ]
-    }
-  ]
-}
+  ], 
+  "orientation": "any", 
+    "short_name": "React App",
+    "name": "Bem Vindo a WIGE",
+    "icons": [
+      {
+        "src": "favicon.ico",
+        "sizes": "64x64 32x32 24x24 16x16",
+        "type": "image/x-icon"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+  }
+  
