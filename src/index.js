@@ -4,15 +4,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { Helmet } from "react-helmet";
-
 
 ReactDOM.render(
-
-  <Helmet>
-  <link rel="manifest" href="./manifest.json" />
-  </Helmet>,
-
   <React.StrictMode>
     <App />
   </React.StrictMode>,
