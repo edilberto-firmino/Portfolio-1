@@ -4,6 +4,19 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+// Verifique se o navegador suporta service workers
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/service-worker.js") // Caminho para o seu arquivo service-worker.js
+      .then((registration) => {
+        console.log("Service Worker registrado com sucesso:", registration);
+      })
+      .catch((error) => {
+        console.error("Erro ao registrar o Service Worker:", error);
+      });
+  });
+}
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +25,4 @@ ReactDOM.render(
   document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
